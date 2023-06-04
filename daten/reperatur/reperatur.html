@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meine Webseite</title>
+  <meta charset="UTF-8">
+  <style>
+        html, body {
+          font-family:'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+
+   }
+  .image-container .description{
+       display: flex;
+   }
+   
+   /* Stile für den Header */
+   header{
+   background-color: #333;
+   color: #fff;  
+   width: 100%;
+   position: fixed;
+   z-index: 999;
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+   padding: 10px;
+    
+    padding-right: 50px;
+}
+   
+   /* Stile für das Bild */
+   .image-container {
+     float: right;
+     max-width: 80%;
+     text-align: center;
+     margin: 10px;
+     padding-top: 50px;
+     padding-right: 0px;
+    
+   }
+   
+   .image-container img {
+   margin-top: 20px;
+     max-width: 100%;
+     /* height: 800px; */
+     border: #333;
+     border-radius: 10%;
+   }
+   
+   /* Stile für die Beschreibung */
+   .description {
+     float: left;
+     width: 80%;
+     text-align: left;
+     margin: 50px;
+     font-style: italic;
+     color: #333;
+     padding-top: 0px;
+     padding-bottom: 200px;
+     font-size: large;
+   }
+
+.sec .description{
+ display: flex;
+ flex-direction: column;
+   justify-content: center;
+   
+
+}
+
+section {
+   padding-top: 0px;
+   padding-bottom: 0px;
+   padding-right: 0px;
+   display: flex;
+   flex-direction: row-reverse;
+   
+
+   flex-wrap: nowrap;
+   align-content: space-around;
+   justify-content: center;
+   align-items: center;
+}
+.sec{
+ justify-content: center;
+ min-height: 100%;
+ flex-wrap: wrap;
+ align-content: center;
+}
+
+.logo{
+   text-decoration:none;
+   color: #dfdbe7;
+   font-weight: 700;
+   font-size: 1.8em;
+}
+.logo_img{
+   height: 45px;
+   width: 45px;
+   border-radius: 50%;
+   padding-right: 5px;
+}
+.spac a{
+ display: flex;
+ align-items: center;
+}
+
+
+.footer {
+           /* background-color: #f1f1f1; */
+           color: #dfdbe7;
+           background-color: #333;
+           padding: 20px;
+           text-align: center;
+           height: 50px; /* Die Höhe des Footers */
+           clear: both;
+       }
+
+ .footer a{
+   color: #dfdbe7;
+ }
+
+
+ @media (max-width: 1023px){
+
+header{
+   padding: 12px 20px;
+}
+
+.navigation a{
+   padding-left: 10px;
+}
+
+.title{
+   font-size: 1.8em;
+}
+
+section{
+   padding: 80px 20px;
+}
+.description{
+ font-size: 1.5em;
+}
+
+.content{
+   flex-direction: column;
+   align-items: center;
+}
+}
+
+@media (max-width:641px){
+header{
+   padding: 7px 7px;
+}
+body{
+   font-size: 12px;
+}
+
+.main h2{
+   font-size: 0.8em;
+}
+
+.main h3{
+   font-size: 1.4em;
+}
+
+}
+
+@media (max-width:360px) {
+header{
+   padding: 5px 4px;
+}
+body{
+   font-size: 10px;
+}
+
+}
+  </style>
+</head>
+<body>
+  <header class="spac" id="header_background">
+    <a href="../../index.html" class="logo" style="text-decoration:none;"><img src="../../Bilder/logo.jpeg" class="logo_img" id="echt">    A to Z</a>
+        <nav class="navigation" >
+             <a style="border: none; border-radius: 20%; padding-right: 50px;">
+                    <button onclick="switchLanguage('en')">En</button>
+                    <button onclick="switchLanguage('de')">DE</button>
+            </a> 
+        </nav>
+  </header>
+
+  <section class="sec">
+    <div class="image-container">
+      <img src="../../Bilder/re (2).jpg" alt="">
+    </div>
+    <div class="description">
+      <div id="repair_title" style="text-align: center;">
+        <strong>Wir bieten Ihnen den Service, den Sie bei anderen vermissen. </strong><br><br>
+      </div>
+      <p id="repair">
+          Unsere Serviceleistungen erstrecken sich rund um das Haus. Durch unser breites Leistungsspektrum k&ouml;nnen wir Ihnen so ziemlich alles an Arbeit abnehmen was Ihnen M&uuml;he macht oder wof&uuml;r sie keine Zeit haben, z. B. Rolladen austausch, Wasserhahn wechseln usw. 
+
+          Unsere Priorit&auml;t ist die Zufriedenheit unseren Kunden.<br> Wenn auch Sie einer unserer Zahlreichen Kunden werden m&ouml;chten setzen Sie sich einfach mit uns in Verbindung.
+
+          Ich werde mich Pers&ouml;nlich Telefonisch mit Ihnen in verbindung setzen und Sie mit den n&ouml;tigen Informationen versorgen oder ein unverbindliches Gespr&auml;ch vor Ort mit Ihnen Vereinbaren.
+      </p>
+  </div>
+  </section>
+  
+
+  <div class="footer">
+    <p class="footer-title">
+      <a href="../../index.html" style="text-decoration: none;">
+        <span id="home">Zur&uuml;ck</span>
+      </a>
+    </p>
+
+
+  </div>
+
+
+  <script>
+    const language_repair_page = {
+      en: {
+        repair_title: '<strong>We offer you the service you miss with others.</strong><br><br>',
+        repair: 'Our services extend around the house. Due to our wide range of services we can take over pretty much all the work that is a hassle for you or that you donot have time for, e.g. replacing roller shutters, changing faucets, etc. Our priority is the satisfaction of our customers.<br> If you also want to become one of our numerous customers just contact us. I will contact you personally by phone and provide you with the necessary information or arrange a non-binding meeting with you on site.',
+        home: 'Home',
+      },
+      de: {
+        repair_title: '<strong>Wir bieten Ihnen den Service, den Sie bei anderen vermissen. </strong><br><br> ',
+        repair: 'Unsere Serviceleistungen erstrecken sich rund um das Haus. Durch unser breites Leistungsspektrum k&ouml;nnen wir Ihnen so ziemlich alles an Arbeit abnehmen was Ihnen M&uuml;he macht oder wofür sie keine Zeit haben, z. B. Rolladen austausch, Wasserhahn wechseln usw.Unsere Priorit&auml;t ist die Zufriedenheit unseren Kunden.<br> Wenn auch Sie einer unserer Zahlreichen Kunden werden m&ouml;chten setzen Sie sich einfach mit uns in Verbindung.Ich werde mich Pers&ouml;nlich Telefonisch mit Ihnen in verbindung setzen und Sie mit den n&ouml;tigen Informationen versorgen oder ein unverbindliches Gespr&auml;ch vor Ort mit Ihnen Vereinbaren.',
+        home: 'Zur&uuml;ck',
+      }
+    };
+
+    function switchLanguage(lang) {
+
+      //repair
+      document.getElementById('repair_title').innerHTML = language_repair_page[lang].repair_title;
+      document.getElementById('repair').innerHTML = language_repair_page[lang].repair;
+      
+      //home
+      document.getElementById('home').innerHTML = language_repair_page[lang].home;
+    }
+  </script>
+
+</body>
+</html>

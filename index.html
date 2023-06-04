@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" lang="de">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>A to Z</title>
+
+    <link rel="stylesheet" herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- ======================= icons ========================= -->
+    <!-- Facebook -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!--User-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Youtube -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Message -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Twiter-->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- Style.css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/2c6a6b1c0d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header class="spac" id="header_background">
+        <a href="#" class="logo" style="text-decoration:none;"><img src="./Bilder/logo.jpeg" class="logo_img" id="echt">    A to Z</a>
+        <nav class="navigation" >
+            <a href="#serveres" style="text-decoration:none;  " id="Dienste">Dienste</a>
+            <!-- <a href="#projects" style="text-decoration:none;   " id="Projekte">Projekte</a> -->
+            <a href="#contact" style="text-decoration:none;   " id="Kontakt">Kontakt</a>
+             <a style="border: none; border-radius: 20%;">
+                    <button onclick="switchLanguage('en')">En</button>
+                    <button onclick="switchLanguage('de')">DE</button>
+            </a>
+        </nav>
+    </header>
+
+
+    <section class="main">
+        <div>
+            <!-- <img src="./Bilder/letztehintergrund.jpeg" class="m"> -->
+            <h2><br><span id="aToZ"> A to Z</span></h2>
+            <h3 id="Reno">Renovierungen und Reparaturen</h3>
+            <h3 id="Experience">Wir bieten Ihnen den Service,</h3>
+            <h3 id="exceptional">den Sie bei anderen vermissen.</h3>
+    </div>
+    </section>
+
+    <section class="cards" id="serveres">
+            <h2 class="title" id="Dienste_card">Dienste</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <a href="./daten/Hausreperatur/ddd.html"><i class="fas fa-home"></i></a>
+                    </div>
+                    <div class="info">
+                        <h3 id="Hausreperatur_Dienste">Hausreperatur</h3>
+                        <p class="dienste">
+                            <ul style="text-align: left;">
+                                <li id="tapezieren">Tapezieren</li>
+                                <li id="Hausanstrich">Malern</li>
+                                <li id="Herstellung">Verputz</li>
+                                <li id="Rolllaeden">K&uuml;chenmontage/Reparatur</li>
+                                <li id="Kartonmoebeln">Laminat- und Fliesenarbeit</li>
+                                <li id="bad">Bad Renovierung</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon">
+                        <a href="./daten/reperatur/reperatur.html"><i class="fa-solid fa-hammer"></i></a>
+                    </div>
+                    <div class="info">
+                        <h3 id="Reparatur">Reparatur</h3>
+                        <p>
+                            <ul >
+                                <li id="Lampen">Herstellung von Lampen und anderen Gegenst&auml;nden</li>
+                                <li id="Fliesen">Bau von K&uuml;chen, Fliesen und Laminatb&ouml;den sowie Sockelleisten</li>
+                                <li id="Anbringung">Anbringung von Gips an den W&auml;nden und anderen Fl&auml;chen</li>
+                                <li id="Austausch">Reparatur oder Austausch von Heizungen </li>
+                                <li id="Badezimmern">Reparatur oder Austausch von Badezimmern</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="icon">
+                        <a href="./daten/garten/garten.html"><i class="fa-sharp fa-solid fa-trowel-bricks"></i></a>
+                    </div>
+                    <div class="info">
+                        <h3 id="Abbau">Abbau</h3>
+                        <p>
+                            <ul>
+                                <li id="Montage">Abbau und Montage von T&uuml;ren</li>
+                                <li id="Zaeunen">Bau von Z&auml;unen</li>
+                                <li id="Gartenhaeusern">Bau von Gartenh&auml;usern</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- <section class="projects" id="projects">
+        <h2 class="title" id="Projektte">Projekte</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Bilder/bild3.jpg"/>
+                </div>
+                <div class="project-info">
+                    <p class="porject-category" id="Projektte_info">Hello</p>
+                    <string class="project-title">
+                        <span>Devib Books</span>
+                        <a href="" class="more-details" id="mehr_info">Mehr Details</a>
+                    </string>
+                </div>
+            </div>
+
+
+        </div>
+    </section> -->
+
+
+    <section class="cards contact projects" id="contact">
+        <h2 class="title" id="KontaktInfo">Kontakt</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon" >
+                    <a href="https://api.whatsapp.com/send?phone=+4915254145991"><i class="fa-brands fa-whatsapp"></i> </a>
+                </div>
+                <div class="info">
+                    <h3>Whatsapp</h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon" >
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <div class="info">
+                    <h3>E-mail</h3>
+                    <p>atoz.24@outlook.com</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <a class="phone" href="tel:+49152 541 459 91"> <i class="fa fa-phone"></i></a>
+                </div>
+                <div class="info">
+                    <h3 id="tel_card">Telefon</h3>
+                    <p>0152 541 459 91</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <a class="phone" href="https://www.facebook.com/AtoZ.professional.hand"> <i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <div class="info">
+                    <h3>Facebook</h3>
+                    <p id="face_card">A bis Z Renovierungen und Reparaturen</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon_map">
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.445461153696!2d7.625628012394086!3d49.4760918569194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47960bb6e491eccd%3A0xf4e572dc49729128!2sA%20to%20Z%20Renovations%20and%20Repairs!5e0!3m2!1sde!2sde!4v1683503908094!5m2!1sde!2sde" width="200" height="300" style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <a class="phone" href="#zeit"> <i class="fa-regular fa-clock"></i></a>
+                </div>
+                <div class="info">
+                    <h3 id="arbeitszeit">Arbeitszeit</h3>
+                    <table style="text-align: left;">
+                        <tr>
+                            <td>
+                                <p id="mo" >Mo - Fr:&emsp;8:00 - 16:00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="sa">Sa:&emsp;&emsp;&emsp; 10:00 - 15:00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="so">So:&emsp;&emsp;&emsp; Nur nach Vereinbarung</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+
+    <footer class="footer">
+        <!-- <p class="footer-title"><span>Ibrahim Kewan</span></p> -->
+        <!-- <p class="footer-title daten"><span><a href="./daten/datenSchutz.html" style="text-decoration: none;">Datenschutz</a></span></p> -->
+       <div class="social-icons">
+            <!-- <a href="https://www.facebook.com/people/Ibrahim-Kewan/pfbid0hR8q7d4gHVsVQqAD41Ymf9Jv8ozK7TRJSqM18X66an15wPnhWoeKBcGdePrtXEqkl/"><i class="fa fa-facebook-square"></i></a> -->
+           <!-- <a href="#"><i class="glyphicon glyphicon-user"></i></a> -->
+             <!-- <a href="https://www.youtube.com/channel/UCwY7kwBpVUZ2JiQ9mBMv2OQ"><i class="fa fa-youtube-play"></i></a>  -->
+            </div>
+    </footer>
+
+    <script>
+        const language = {
+  en: {
+    Dienste: 'Services',
+    Projekte: 'Project',
+    Kontakt: 'Contact',
+  },
+  de: {
+    Dienste: 'Dienste',
+    Projekte: 'Projekte',
+    Kontakt: 'Kontakt',
+  }
+};
+
+const language_main = {
+  en: {
+    aToZ: 'A to Z',
+    // Hausreperatur: 'House Repair',
+    // Mein_arbeit: 'See My Work',
+    Dienste_card: 'Services',
+    // slogan: 'Once popped never stopped again',
+    Reno: 'Renovations and Repairs',
+    Experience:'We offer you the service,',
+    exceptional: 'that you miss with others.',
+  },
+  de: {
+    aToZ: 'A to Z',
+    // Hausreperatur: 'Haus Reperatur',
+    // Mein_arbeit: 'Sehe mein Arbeit',
+    Dienste_card: 'Dienste',
+    // slogan: 'Einmal gepoppt nie mehr gestoppt',
+    Reno: 'Renovierungen und Reparaturen',
+    Experience:'Wir bieten Ihnen den Service,',
+    exceptional: 'den Sie bei anderen vermissen.',
+  }
+};
+
+const language_Dienste = {
+  en: {
+    Hausreperatur_Dienste: 'Hausreperatur',
+    tapezieren: 'Wallpapering',
+    Hausanstrich: 'Painting',
+    Herstellung: 'Plaster',
+    Rolllaeden: 'Kitchen assembly/repair',
+    Kartonmoebeln: 'Laminate and tile work',
+    bad: 'Bathroom renovation',
+  },
+  de: {
+    Hausreperatur_Dienste: 'Hausreperatur',
+    tapezieren: 'Tapezieren',
+    Hausanstrich: 'Malern',
+    Herstellung: 'Verputz',
+    Rolllaeden: 'K&uuml;chenmontage/Reparatur',
+    Kartonmoebeln: 'Laminat- und Fliesenarbeit',
+    bad: 'Bad Renovierung',
+  }
+};
+
+const language_Reparatur = {
+  en: {
+    Reparatur: 'Repair',
+    Lampen: 'Production of lamps and other items',
+    Fliesen: 'Construction of kitchens, tiles and laminate flooring and skirting boards',
+    Anbringung: 'Application of plaster on the walls and other surfaces',
+    Austausch: 'Repair or replacement of heaters',
+    // Heizungen: 'Heating',
+    Badezimmern: 'Bathroom repair or replacement',
+  },
+  de: {
+    Reparatur: 'Reparatur',
+    Lampen: 'Herstellung von Lampen und anderen Gegenst&auml;nden',
+    Fliesen: 'Bau von K&uuml;chen, Fliesen und Laminatb&ouml;den sowie Sockelleisten',
+    Anbringung: 'Anbringung von Gips an den W&auml;nden und anderen Fl&auml;chen',
+    Austausch: 'Reparatur oder Austausch von Heizungen',
+    // Heizungen: 'Heizungen',
+    Badezimmern: 'Reparatur oder Austausch von Badezimmern',
+  }
+};
+
+const language_Abbau = {
+  en: {
+    Abbau: 'Dismantling',
+    Montage: 'Disassembly and assembly of doors',
+    Zaeunen: 'Building fences',
+    Gartenhaeusern: 'Garden house construction',
+  },
+  de: {
+    Abbau: 'Abbau',
+    Montage: 'Abbau und Montage von T&uuml;ren',
+    Zaeunen: 'Bau von Z&auml;unen',
+    Gartenhaeusern: 'Bau von Gartenh&auml;usern',
+  }
+};
+
+// const language_Projektte = {
+//   en: {
+//     Projektte: 'Projects',
+//     Projektte_info: 'h',
+//     mehr_info: 'More details'
+//   },
+//   de: {
+//     Projektte: 'Projekte',
+//     Projektte_info: 'he',
+//     mehr_info: 'Mehr Details',
+//   }
+// };
+
+const language_kontakt = {
+  en: {
+    KontaktInfo: 'Contact',
+    tel_card: 'Phone',
+    face_card: 'A to Z Renovations and Repairs',
+    arbeitszeit: 'Working time',
+    mo: 'Mo - Fr:&emsp;8:00 - 16:00',
+    sa: 'Sa:&emsp;&emsp;&emsp; 10:00 - 15:00',
+    so: 'Su:&emsp;&emsp;&emsp; Only by appointment',
+  },
+  de: {
+    KontaktInfo: 'Kontakt',
+    tel_card: 'Telefon',
+    face_card: 'A bis Z Renovierungen und Reparaturen',
+    arbeitszeit: 'Arbeitszeit',
+    mo: 'Mo - Fr:&emsp;8:00 - 16:00',
+    sa: 'Sa:&emsp;&emsp;&emsp; 10:00 - 15:00',
+    so: 'So:&emsp;&emsp;&emsp; Nur nach Vereinbarung',
+  }
+};
+
+
+
+function switchLanguage(lang) {
+  //==================== Header
+  document.getElementById('Dienste').innerHTML = language[lang].Dienste;
+  document.getElementById('Kontakt').innerHTML = language[lang].Kontakt;
+
+  //==================== Main
+  document.getElementById('aToZ').innerHTML = language_main[lang].aToZ;
+  document.getElementById('Dienste_card').innerHTML = language_main[lang].Dienste_card;
+  document.getElementById('Reno').innerHTML = language_main[lang].Reno;
+  document.getElementById('Experience').innerHTML = language_main[lang].Experience;
+  document.getElementById('exceptional').innerHTML = language_main[lang].exceptional;
+
+  //==================== Dienste
+  document.getElementById('Hausreperatur_Dienste').innerHTML = language_Dienste[lang].Hausreperatur_Dienste;
+  document.getElementById('tapezieren').innerHTML = language_Dienste[lang].tapezieren;
+  document.getElementById('Hausanstrich').innerHTML = language_Dienste[lang].Hausanstrich;
+  document.getElementById('Herstellung').innerHTML = language_Dienste[lang].Herstellung;
+  document.getElementById('Rolllaeden').innerHTML = language_Dienste[lang].Rolllaeden;
+  document.getElementById('Kartonmoebeln').innerHTML = language_Dienste[lang].Kartonmoebeln;
+  document.getElementById('bad').innerHTML = language_Dienste[lang].bad;
+
+  //==================== Reperatur
+  document.getElementById('Reparatur').innerHTML = language_Reparatur[lang].Reparatur;
+  document.getElementById('Lampen').innerHTML = language_Reparatur[lang].Lampen;
+  document.getElementById('Fliesen').innerHTML = language_Reparatur[lang].Fliesen;
+  document.getElementById('Anbringung').innerHTML = language_Reparatur[lang].Anbringung;
+  document.getElementById('Austausch').innerHTML = language_Reparatur[lang].Austausch;
+  // document.getElementById('li_leitung Heizungen').innerHTML = language_Reparatur[lang].Heizungen;
+  document.getElementById('Badezimmern').innerHTML = language_Reparatur[lang].Badezimmern;
+
+  //==================== Abbau
+  document.getElementById('Abbau').innerHTML = language_Abbau[lang].Abbau;
+  document.getElementById('Montage').innerHTML = language_Abbau[lang].Montage;
+  document.getElementById('Zaeunen').innerHTML = language_Abbau[lang].Zaeunen;
+  document.getElementById('Gartenhaeusern').innerHTML = language_Abbau[lang].Gartenhaeusern;
+
+  // //==================== Abbau
+  // document.getElementById('Projektte').innerHTML = language_Projektte[lang].Projektte;
+  // document.getElementById('Projektte_info').innerHTML = language_Projektte[lang].Projektte_info;
+  // document.getElementById('mehr_info').innerHTML = language_Projektte[lang].mehr_info;
+
+  //==================== Kontakt
+  document.getElementById('KontaktInfo').innerHTML = language_kontakt[lang].KontaktInfo;
+  document.getElementById('tel_card').innerHTML = language_kontakt[lang].tel_card;
+  document.getElementById('face_card').innerHTML = language_kontakt[lang].face_card;
+  document.getElementById('arbeitszeit').innerHTML = language_kontakt[lang].arbeitszeit;
+  document.getElementById('mo').innerHTML = language_kontakt[lang].mo;
+  document.getElementById('sa').innerHTML = language_kontakt[lang].sa;
+  document.getElementById('so').innerHTML = language_kontakt[lang].so;
+}
+    </script>
+</body>
+</html>

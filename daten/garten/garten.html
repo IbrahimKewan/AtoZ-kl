@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meine Webseite</title>
+  <meta charset="UTF-8">
+  <style>
+    /* Globale Stile */
+     /* Globale Stile */
+     html, body {
+      font-family:'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+   .image-container .description{
+        display: flex;
+    }
+    
+    /* Stile für den Header */
+    header{
+    background-color: #333;
+    color: #fff;  
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+
+    padding-right: 50px;
+}
+    
+    /* Stile für das Bild */
+    .image-container {
+      float: right;
+      max-width: 80%;
+      text-align: center;
+      margin: 10px;
+      padding-top: 50px;
+      padding-right: 0px;
+     
+    }
+    
+    .image-container img {
+    margin-top: 20px;
+      max-width: 100%;
+      /* height: 800px; */
+      border: #333;
+      border-radius: 10%;
+    }
+    
+    /* Stile für die Beschreibung */
+    .description {
+      float: left;
+      width: 80%;
+      text-align: left;
+      margin: 50px;
+      font-style: italic;
+      color: #333;
+      padding-top: 0px;
+      padding-bottom: 200px;
+      font-size: 1.5em;
+    }
+
+    /* .footer{
+    background-color: #333;
+
+    color:#fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0px;
+    align-items: flex-start;
+    clear: both;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight:600 ;
+}
+
+.footer-title span{
+    color:#fff;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0px 12px 0px 0px;
+
+} */
+
+.sec .description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    
+
+}
+
+section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+ 
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.sec{
+  justify-content: center;
+  min-height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.logo{
+    text-decoration:none;
+    color: #dfdbe7;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.logo_img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+.spac a{
+  display: flex;
+  align-items: center;
+}
+
+
+.footer {
+            /* background-color: #f1f1f1; */
+            color: #dfdbe7;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            height: 50px; /* Die Höhe des Footers */
+            clear: both;
+        }
+
+  .footer a{
+    color: #dfdbe7;
+  }
+
+
+  @media (max-width: 1023px){
+
+header{
+    padding: 12px 20px;
+}
+
+.navigation a{
+    padding-left: 10px;
+}
+
+.title{
+    font-size: 1.8em;
+}
+
+section{
+    padding: 80px 20px;
+}
+.description{
+  font-size: 1em;
+}
+
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media (max-width:641px){
+header{
+    padding: 7px 7px;
+}
+body{
+    font-size: 12px;
+}
+
+.main h2{
+    font-size: 0.8em;
+}
+
+.main h3{
+    font-size: 1.4em;
+}
+
+}
+
+@media (max-width:360px) {
+header{
+    padding: 5px 4px;
+}
+body{
+    font-size: 10px;
+}
+
+}
+  
+  </style>
+</head>
+<body>
+  <header class="spac" id="header_background">
+    <a href="../../index.html" class="logo" style="text-decoration:none;"><img src="../../Bilder/logo.jpeg" class="logo_img" id="echt">    A to Z</a>
+        <nav class="navigation" >
+             <a style="border: none; border-radius: 20%; padding-right: 50px;">
+                    <button onclick="switchLanguage('en')">En</button>
+                    <button onclick="switchLanguage('de')">DE</button>
+            </a> 
+        </nav>
+  </header>
+
+  <section class="sec">
+    <div class="image-container">
+      <img src="../../Bilder/garten.jpeg" alt="">
+    </div>
+    <div class="description">
+      <div id="beschrei">
+        <strong><div style="text-align: center;" id="be_title">Wir bauen & gestalten Ihren Garten.</div></strong><br>
+      </div>
+      <p id="garten_be">
+        Wir sorgen f&uuml;r Wohlfühlcharakter in Ihrem Garten
+        Wir k&uuml;mmern uns um Ihr Gartenbauprojekt von der Planung bis hin zur Realisierung und der anschließenden Pflege. Die Umsetzung Ihres
+        Gartenwunsches ganz nach Ihren individuellen Vorstellungen ist dabei unser oberstes Gebot.
+        
+         Unser
+        professionelles und kreatives Team steht Ihnen jederzeit beratend zur Seite und entwickelt
+        gemeinsam mit Ihnen einen Gartenplan, der Ihr Herz h&ouml;herschlagen l&auml;sst. Wir sorgen daf&uuml;r, dass f&uuml;r
+        Sie als Hausbesitzer Ihr langersehnter Wunsch nach einer grünen Oase in den eigenen vier W&auml;nden
+        in Erf&uuml;llung geht.
+        Unsere Versprechen an Sie
+        
+        Bei uns k&ouml;nnen Sie sich immer auf eine transparente Preisgestaltung und eine offene und ehrliche Kommunikation verlassen. Wir bieten eine flexible Terminvergabe und geben unser Bestes mit Ihnen Ihren Wunschtermin zu vereinbaren. 
+        
+        Ganz gleich, ob Sie schon einen festen Plan haben oder noch auf Ideensuche sind, wir beraten Sie
+        umfassend und k&uuml;mmern uns um jede Art von kreativer Gestaltung in der Landschaftsg&auml;rtnerei.
+        Unserem fachkundigen Team sind dabei keine Grenzen gesetzt, wir setzen alles um, was Ihr Herz
+        begehrt. Sie haben bei uns für Ihre k&uuml;nftige Gartenanlage eine breite Auswahl an
+        Beleuchtungsm&ouml;glichkeiten, Gestaltung von Kr&auml;uterg&auml;rten, Teichen und Wegen sowie Dekoration.
+        
+        
+        Als Betrieb für Garten- und Landschaftsbau planen und gestalten wir Ihren Garten ganz nach Ihren individuellen W&uuml;nschen und Vorstellungen. Bei der Umsetzung behalten wir alle Besonderheiten wie Bodenbedingungen, Gel&auml;ndebegebenheiten und die passende Pflanzenauswahl im Blick, die wir im Vorfeld mit Ihnen bei einer ausf&uuml;hrlichen Beratung besprechen. Ob privater Traumgarten, Wohnanlage oder &ouml;ffentlicher Raum – unser kompetentes Team meistert jedes Gartenprojekt unabh&auml;ngig von der verf&uuml;gbaren Fl&auml;che, passend zu jedem Geb&auml;udestil und trifft jeden Geschmack.
+        <br>
+        Pflaster-, Wege- und Terrassenarbeiten
+        <br>
+        Zaun-, Mauer- und Natursteinbau
+        <br>
+        
+        Teich-, Brunnen-, und Wasserbau
+        <br>
+        Grundst&uuml;cks- und Baumpflege
+        <br>
+        Saatarbeiten und Rollrasenverlegung
+     </p>
+  </div>
+  </section>
+  
+
+  <div class="footer">
+    <p class="footer-title">
+      <a href="../../index.html" style="text-decoration: none;">
+        <span id="home">Zur&uuml;ck</span>
+      </a>
+    </p>
+
+
+  </div>
+
+
+  <script>
+     const language_repair_page = {
+      en: {
+        be_title:'We build & design your garden.',
+        garten_be: 'We provide for well-being character in your garden We take care of your gardening project from planning to realization and subsequent maintenance. The realization of your garden wishes according to your individual ideas is our top priority. Our professional and creative team is always available to advise you and develop a garden plan together with you a garden plan that will make your heart beat faster. We make sure that for homeowner\'s long-awaited wish for a green oasis within your own four walls comes true. comes true. Our promise to you With us, you can always count on transparent pricing and open and honest communication. We offer a flexible appointment schedule and do our best to arrange your desired date with you. No matter if you already have a fixed plan or if you are still searching for ideas, we will advise you comprehensively and take care of any kind of creative design in landscaping. There are no limits for our expert team, we implement everything your heart desires. desires. You have with us for your future garden a wide choice of Lighting options, design of herb gardens, ponds and paths, as well as decoration. As a company for gardening and landscaping, we plan and design your garden entirely according to your individual wishes and ideas. During the implementation we keep in mind all special features such as soil conditions, terrain conditions and the appropriate plant selection, which we discuss with you in advance during a detailed consultation. Whether it is a private dream garden, a residential complex or a public space - our competent team masters every garden project regardless of the available space, matching every building style and meeting every taste. <br>Paving, path and terrace work <br>Fence, wall and natural stone construction<br>pond, fountain and water construction<br>Land and tree maintenance<br>Seeding and sodding',
+        home: 'Home',
+      },
+      de: {
+        be_title:'Wir bauen & gestalten Ihren Garten.',
+        garten_be: 'Wir sorgen f&uuml;r Wohlfühlcharakter in Ihrem Garten Wir k&uuml;mmern uns um Ihr Gartenbauprojekt von der Planung bis hin zur Realisierung und der anschließenden Pflege. Die Umsetzung Ihres Gartenwunsches ganz nach Ihren individuellen Vorstellungen ist dabei unser oberstes Gebot.Unser professionelles und kreatives Team steht Ihnen jederzeit beratend zur Seite und entwickelt gemeinsam mit Ihnen einen Gartenplan, der Ihr Herz h&ouml;herschlagen l&auml;sst. Wir sorgen daf&uuml;r, dass f&uuml;r Sie als Hausbesitzer Ihr langersehnter Wunsch nach einer grünen Oase in den eigenen vier W&auml;nden in Erf&uuml;llung geht. Unsere Versprechen an Sie Bei uns k&ouml;nnen Sie sich immer auf eine transparente Preisgestaltung und eine offene und ehrliche Kommunikation verlassen. Wir bieten eine flexible Terminvergabe und geben unser Bestes mit Ihnen Ihren Wunschtermin zu vereinbaren. Ganz gleich, ob Sie schon einen festen Plan haben oder noch auf Ideensuche sind, wir beraten Sie umfassend und k&uuml;mmern uns um jede Art von kreativer Gestaltung in der Landschaftsg&auml;rtnerei.Unserem fachkundigen Team sind dabei keine Grenzen gesetzt, wir setzen alles um, was Ihr Herz begehrt. Sie haben bei uns für Ihre k&uuml;nftige Gartenanlage eine breite Auswahl an Beleuchtungsm&ouml;glichkeiten, Gestaltung von Kr&auml;uterg&auml;rten, Teichen und Wegen sowie Dekoration.Als Betrieb für Garten- und Landschaftsbau planen und gestalten wir Ihren Garten ganz nach Ihren individuellen W&uuml;nschen und Vorstellungen. Bei der Umsetzung behalten wir alle Besonderheiten wie Bodenbedingungen, Gel&auml;ndebegebenheiten und die passende Pflanzenauswahl im Blick, die wir im Vorfeld mit Ihnen bei einer ausf&uuml;hrlichen Beratung besprechen. Ob privater Traumgarten, Wohnanlage oder &ouml;ffentlicher Raum – unser kompetentes Team meistert jedes Gartenprojekt unabh&auml;ngig von der verf&uuml;gbaren Fl&auml;che, passend zu jedem Geb&auml;udestil und trifft jeden Geschmack.<br>Pflaster-, Wege- und Terrassenarbeiten<br>Zaun-, Mauer- und Natursteinbau<br>Teich-, Brunnen-, und Wasserbau<br>Grundst&uuml;cks- und Baumpflege<br>Saatarbeiten und Rollrasenverlegung',
+        home: 'Zur&uuml;ck',
+      }
+    };
+
+    function switchLanguage(lang) {
+
+      //repair
+      document.getElementById('be_title').innerHTML = language_repair_page[lang].be_title;
+      document.getElementById('garten_be').innerHTML = language_repair_page[lang].garten_be;
+      
+      //home
+      document.getElementById('home').innerHTML = language_repair_page[lang].home;
+    }
+  </script>
+
+</body>
+</html>

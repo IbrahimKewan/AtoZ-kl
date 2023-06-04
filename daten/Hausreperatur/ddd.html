@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meine Webseite</title>
+  <meta charset="UTF-8">
+  <style>
+    /* Globale Stile */
+     /* Globale Stile */
+     html, body {
+      font-family:'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+   .image-container .description{
+        display: flex;
+    }
+    
+    /* Stile für den Header */
+    header{
+    background-color: #333;
+    color: #fff;  
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+    
+    /* Stile für das Bild */
+    .image-container {
+      float: right;
+      max-width: 50%;
+      text-align: center;
+      margin: 10px;
+      padding-top: 50px;
+      padding-right: 0px;
+     
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      height: 800px;
+      border: #333;
+      border-radius: 10%;
+    }
+    
+    /* Stile für die Beschreibung */
+    .description {
+      float: left;
+      width: 40%;
+      text-align: left;
+      margin: 50px;
+      font-style: italic;
+      color: #333;
+      padding-top: 0px;
+      padding-bottom: 200px;
+      font-size: large;
+    }
+
+    /* .footer{
+    background-color: #333;
+
+    color:#fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0px;
+    align-items: flex-start;
+    clear: both;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight:600 ;
+}
+
+.footer-title span{
+    color:#fff;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0px 12px 0px 0px;
+
+} */
+
+.sec .description{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+section {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+ 
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.sec{
+  justify-content: center;
+  min-height: 100%;
+}
+
+.logo{
+    text-decoration:none;
+    color: #dfdbe7;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.logo_img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+.spac a{
+  display: flex;
+  align-items: center;
+}
+
+
+.footer {
+            /* background-color: #f1f1f1; */
+            color: #dfdbe7;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            height: 50px; /* Die Höhe des Footers */
+            clear: both;
+        }
+
+  .footer a{
+    color: #dfdbe7;
+  }
+
+  
+  @media (max-width: 1023px){
+
+header{
+    padding: 12px 20px;
+}
+
+.navigation a{
+    padding-left: 10px;
+}
+
+.title{
+    font-size: 1.8em;
+}
+
+section{
+    padding: 80px 20px;
+}
+.description{
+  font-size: 1.5em;
+}
+
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media (max-width:641px){
+header{
+    padding: 7px 7px;
+}
+body{
+    font-size: 12px;
+}
+
+.main h2{
+    font-size: 0.8em;
+}
+
+.main h3{
+    font-size: 1.4em;
+}
+
+}
+
+@media (max-width:360px) {
+header{
+    padding: 5px 4px;
+}
+body{
+    font-size: 10px;
+}
+
+}
+  </style>
+</head>
+<body>
+  <header class="spac" id="header_background">
+    <a href="../../index.html" class="logo" style="text-decoration:none;"><img src="../../Bilder/logo.jpeg" class="logo_img" id="echt">    A to Z</a>
+        <nav class="navigation" >
+             <a style="border: none; border-radius: 20%; padding-right: 50px;" >
+                    <button onclick="switchLanguage('en')">En</button>
+                    <button onclick="switchLanguage('de')">DE</button>
+            </a> 
+        </nav>
+  </header>
+
+  <section class="sec">
+    <div class="image-container">
+      <img src="hausreperatur.jpeg" alt="">
+    </div>
+    <div class="description">
+      <p id="neben">
+        Neben den gängigen Arbeiten bieten wir Ihnen mit verschiedenen Spezialtechniken die M&ouml;glichkeit, Ihren Wohnraum lebendig und außergew&ouml;hnlich aussehen zu lassen.
+        <br>Bei einem pers&auml;nlichen Gespr&auml;ch nehmen wir uns zusammen Zeit für Ihre Vorstellungen und Ideen.
+      </p>
+      
+      <p id="gem">
+        Gemeinsam stimmen wir Ihre neuen vier W&auml;nde auf Ihren Charakter ab und erzielen bestm&ouml;gliche Ergebnisse im Innen- und Außenbereich.
+        <br>Lassen Sie sich von den vielf&auml;ltigen M&ouml;glichkeiten &uuml;berraschen!
+      </p>
+  </div>
+  </section>
+  
+
+  <div class="footer">
+    <p class="footer-title">
+      <a href="../../index.html" style="text-decoration: none;">
+        <span id="home">Zur&uuml;ck</span>
+      </a>
+    </p>
+
+
+  </div>
+
+
+  <script>
+    const language_repair_page = {
+      en: {
+        neben: 'In addition to the usual work, we offer you with various special techniques to make your living space look alive and extraordinary.<br>In a personal conversation, we take time together for your ideas and ideas.',
+        gem: 'Together we will match your new four walls to your character and achieve the best possible results indoors and outdoors.<br>Let yourself be surprised by the many possibilities!',
+        home: 'Home',
+      },
+      de: {
+        neben: 'Neben den gängigen Arbeiten bieten wir Ihnen mit verschiedenen Spezialtechniken die M&ouml;glichkeit, Ihren Wohnraum lebendig und außergew&ouml;hnlich aussehen zu lassen.<br>Bei einem pers&auml;nlichen Gespr&auml;ch nehmen wir uns zusammen Zeit für Ihre Vorstellungen und Ideen.',
+        gem: 'Gemeinsam stimmen wir Ihre neuen vier W&auml;nde auf Ihren Charakter ab und erzielen bestm&ouml;gliche Ergebnisse im Innen- und Außenbereich.<br>Lassen Sie sich von den vielf&auml;ltigen M&ouml;glichkeiten &uuml;berraschen!',
+        home: 'Zur&uuml;ck',
+      }
+    };
+
+    function switchLanguage(lang) {
+
+      //repair
+      document.getElementById('neben').innerHTML = language_repair_page[lang].neben;
+      document.getElementById('gem').innerHTML = language_repair_page[lang].gem;
+      
+      //home
+      document.getElementById('home').innerHTML = language_repair_page[lang].home;
+    }
+  </script>
+
+</body>
+</html>
